@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contato/Zibra FC</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="StyleContato.css">
+	</head>
+	<body>
+		<header>
+	<div class="caixa">
+		<h1><img src="Logo.png"></h1>
+		<nav>	
+			<ul>
+				<li><a href="HomeZibra.html">Home</a></li>
+				<li><a href="ConquistasZibra.html">Estatísticas</a></li>
+				<li><a href="ElencoZibra.html">Elenco</a></li>
+                <li><a href="ContatoZibra.html">Contato</a></li>
+			</ul>
+		</nav>
+	</div>
+		</header>
+		<main>
+            <h2>Contato:</h2>
+            <p class="recrutamento">Insira seus dados abaixo caso queira fazer parte do Time Zibra FC.</p>
+            <form class="Contato">
+                <label for="Nome">Nome completo</label>
+                <input type="text" id="Nome" class="inputPadrão" required>
+
+                <label for="Email">Email</label>
+                <input type="text" id="Email" class="inputPadrão" required placeholder="email@hotmail.com">
+
+                <label for="Telefone">Telefone</label>
+                <input type="tel" id="Telefone" class="inputPadrão" required placeholder="(XX) XXXXXXXXX">
+
+				<label for="Local">Estado</label>
+				<input type="text" id="Local" class="inputPadrão" required>
+
+				<fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email">
+						<input type="radio" name="contato" value="email" id="radio-email">
+						Email
+					</label>
+				
+					<label for="radio-telefone">
+						<input type="radio" name="contato" value="telefone" id="radio-telefone"> 
+						Telefone
+					</label>
+				
+					<label for="radio-whatsapp">
+						<input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+						WhatsApp
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horário você tem a disposição para treinar com o time?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+						<option>Manhã e Noite</option>
+						<option>Manhã e Tarde</option>
+						<option>Tarde e Noite</option>
+						<option>Qualquer horário</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox">
+					<input type="checkbox" checked>
+					Gostaria de receber nossas novidades por email?
+				</label>
+
+				<label class="checkbox">
+					<input type="checkbox" checked>
+					Juro solenimente que não vou fazer nada de bom.
+				</label>
+
+                <input class="envio" type="submit" value="Enviar">
+            </form>
+		</main>
+		<footer>
+			<img src="Logo.png">
+			<p class="Copyright">&copy; Copyright Zibra FC - 2021</p>
+		</footer>
+	</body>
